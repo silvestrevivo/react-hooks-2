@@ -1,3 +1,7 @@
+# react-hooks-2
+
+React-hooks application developed the Udemy Tutorial from @reedbarger
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
