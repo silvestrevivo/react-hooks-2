@@ -1,11 +1,18 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
-class App extends Component {
-  render() {
-    return (
-      <div>React-Hooks-2</div>
-    );
+const App = () => {
+
+  const [count, setCountState] = useState(0);
+
+  const incrementCount = () => {
+    setCountState(count + 1)
   }
+
+  return (
+    <button onClick={incrementCount}>
+      {count === 0 ? 'Click me, please' : `I was clicked ${count} times`}
+    </button>
+  )
 }
 
-export default App;
+export default App
