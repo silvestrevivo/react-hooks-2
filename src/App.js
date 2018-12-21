@@ -5,7 +5,8 @@ const App = () => {
   const [count, setCountState] = useState(0);
 
   const incrementCount = () => {
-    setCountState(count + 1)
+    setCountState(prevCount => prevCount + 1)
+    // prevCount does the same than prevState in Class components
   }
 
   return (
